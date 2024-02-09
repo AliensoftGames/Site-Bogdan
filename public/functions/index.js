@@ -9,38 +9,26 @@
 
 //import { initializeApp, cert } from '/firebase-admin/app';
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
-//import { admin } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
-//import { getFirestore } from '/firebase-admin/firestore';
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js';
-//const serviceAccount = 'public/Key.json';
-//te rog porneste
+
 const firebaseConfig = {
-
   apiKey: "AIzaSyC7aPgBuObzReW9N1Xcb6RmjpaQmYzRnsE",
-
   authDomain: "distancecontrol-23038.firebaseapp.com",
-
   databaseURL: "https://distancecontrol-23038-default-rtdb.europe-west1.firebasedatabase.app",
-
   projectId: "distancecontrol-23038",
-
   storageBucket: "distancecontrol-23038.appspot.com",
-
   messagingSenderId: "374392657005",
-
   appId: "1:374392657005:web:581ebf058efdf766c01b64",
-
   measurementId: "G-RNEHZSCQKV"
-
 };
 
 
 initializeApp({ firebaseConfig });
+const db = getFirestore();
   
 
 TestFunc();
 async function TestFunc(){
-const db = getFirestore();
 const docRef = db.collection("Test").doc("Bogdan e gay");
 await docRef.set({
     Nume : "Bogdan",
