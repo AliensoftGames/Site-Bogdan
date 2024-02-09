@@ -8,13 +8,14 @@
  */
 
 //import { initializeApp, cert } from '/firebase-admin/app';
-import { initializeApp, applicationDefault } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
+import { cert } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
 //import { getFirestore } from '/firebase-admin/firestore';
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js';
 const serviceAccount = 'public/Key.json';
 
 initializeApp({
-    credential: applicationDefault(serviceAccount)
+    credential: cert(serviceAccount)
   });
   
 
