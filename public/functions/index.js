@@ -15,7 +15,7 @@ import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase
 const serviceAccount = 'public/Key.json';
 
 initializeApp({
-    credential: cert(serviceAccount)
+    credential: serviceAccount
   });
   
 
