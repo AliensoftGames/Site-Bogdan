@@ -17,7 +17,6 @@ const serviceAccount = 'public/Key.json';
 const config = { projectId: "distancecontrol-23038" };
 
 initializeApp({
-  credential: serviceAccount,
   credential: config,
   databaseURL: "https://distancecontrol-23038-default-rtdb.europe-west1.firebasedatabase.app"
   });
