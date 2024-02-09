@@ -14,10 +14,12 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.10.0/firebas
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js';
 const serviceAccount = 'public/Key.json';
 
-initializeApp({
-    credential: serviceAccount,
-    databaseURL: "https://distancecontrol-23038-default-rtdb.europe-west1.firebasedatabase.app"
+const config = { projectId: "distancecontrol-23038" };
 
+initializeApp({
+  credential: serviceAccount,
+  credential: config,
+  databaseURL: "https://distancecontrol-23038-default-rtdb.europe-west1.firebasedatabase.app"
   });
   
 
