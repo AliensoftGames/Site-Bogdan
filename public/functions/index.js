@@ -10,13 +10,14 @@
 //import { initializeApp, cert } from '/firebase-admin/app';
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
 //import { admin } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
-const { admin } = require('/firebase-admin/app');
 //import { getFirestore } from '/firebase-admin/firestore';
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js';
 const serviceAccount = 'public/Key.json';
 
 initializeApp({
-    credential: admin.credential.cert(serviceAccount),
+    credential: serviceAccount,
+    databaseURL: "https://distancecontrol-23038-default-rtdb.europe-west1.firebasedatabase.app"
+
   });
   
 
