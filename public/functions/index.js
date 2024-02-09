@@ -9,13 +9,14 @@
 
 //import { initializeApp, cert } from '/firebase-admin/app';
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
-//import { cert } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
+import { credential } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
 //import { getFirestore } from '/firebase-admin/firestore';
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js';
 const serviceAccount = 'public/Key.json';
-
+//te rog mergi in pula mea
 initializeApp({
-    credential: serviceAccount
+    credential: credential.cert(serviceAccount),
+    databaseURL: "https://distancecontrol-23038-default-rtdb.europe-west1.firebasedatabase.app"
   });
   
 
