@@ -8,7 +8,7 @@
  */
 
 //import { initializeApp, cert } from '/firebase-admin/app';
-import { adminsdk } from 'https://www.gstatic.com/firebasejs/13.2.1/firebase-app.js';
+import { adminsdk } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
 //import { admin } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
 //import { getFirestore } from '/firebase-admin/firestore';
