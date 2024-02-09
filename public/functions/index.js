@@ -7,8 +7,10 @@
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
 
-import { initializeApp, cert } from '/firebase-admin/app';
-import { getFirestore } from '/firebase-admin/firestore';
+//import { initializeApp, cert } from '/firebase-admin/app';
+import { initializeApp, cert } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';
+//import { getFirestore } from '/firebase-admin/firestore';
+import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js';
 const serviceAccount = 'public/Key.json';
 
 initializeApp({
